@@ -95,18 +95,17 @@ return [
     'trial_days'    => 4,
 
 
-    // --- ИИ ------------------------------------------------------
-    'ai' => [
-        'provider' => 'openai',   // openai-совместимый слой Gemini
-        'api_key'  => 'AQ.Ab8RN6I-b-In6DvdxLZiJwOX_TCR7_Nw8hy_zE9PHOEEjwe_Ow',
-        'base'     => 'https://generativelanguage.googleapis.com/v1beta/openai',
-        'model'      => 'gemini-flash-lite-latest',  // ежедневный коуч
-        'model_plan' => 'gemini-flash-latest',       // интервью и план
-        'json_mode'  => 'prompt',                    // ВАЖНО для Gemini
-        'max_tokens' => 900,
-        'timeout'    => 30,
-        'daily_msg_limit' => 20,
-        'json_mode' => 'prompt'
+ 'ai' => [
+    'provider'          => 'openai',
+    'api_key'           => 'sk-ws-H.DDPPIXD.JtEh.MEUCIQDlh_sPljwMCGKP259uzx2YRQ5EttE5WC0l9-gHvJ-xvQIgWVCBeqXuXf-VPmmn6COWGrPHacyFKSyboCTEKNRAnEE',  // ← сюда
+    'base'              => 'https://dashscope.aliyuncs.com/compatible-mode/v1', // ← сюда
+    'model'             => 'qwen-turbo-latest',       // ← ежедневный коуч (дешёвый, быстрый)
+    'model_plan'        => 'qwen-plus-latest',        // ← интервью и план (поумнее)
+    'json_mode'         => 'prompt',                  // оставляй как prompt
+    'max_tokens'        => 900,
+    'timeout'           => 30,
+    'daily_msg_limit'   => 20,
+   
     ],
 
     // --- Генератор заданий ---------------------------------------
