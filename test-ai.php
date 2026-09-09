@@ -11,7 +11,7 @@
 // Выбери нужный вариант, закомментировав другой
 
 // --- ВАРИАНТ А: Qwen через DashScope ---
-$api_key = 'sk-ТВОЙ_КЛЮЧ_DASHSCOPE'; 
+$api_key = 'sk-ws-H.DDPPIXD.JtEh.MEUCIQDlh_sPljwMCGKP259uzx2YRQ5EttE5WC0l9-gHvJ-xvQIgWVCBeqXuXf-VPmmn6COWGrPHacyFKSybo'; 
 $base_url = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
 $model    = 'qwen-turbo-latest'; // Если ошибка, попробуй 'qwen-turbo' или 'qwen-plus'
 
